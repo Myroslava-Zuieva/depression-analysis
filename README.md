@@ -18,8 +18,8 @@ Dataset Description
 	•	Size: 413769 rows, 16 columns
 	•	Key Fields:
 	•	Age: The age of the individual in years.
-        •       Marital Status: The marital status of the individual.
-        •       Education Level: The highest level of education attained by the individual.
+	•	Marital Status: The marital status of the individual.
+	•	Education Level: The highest level of education attained by the individual.
 	•	Income: The annual income of the individual in USD.
 	•	Alcohol Consumption: The level of alcohol consumption.
 	•	Sleep Patterns: The quality of sleep.
