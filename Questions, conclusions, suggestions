@@ -1,67 +1,86 @@
-Analytical questions
+	Analytical questions
 
 1.	What is the average income based on marital status and education level? 
 Divorced individuals with a Bachelor’s Degree have the highest average income of $60,103.99.
 Widowed individuals with a High School education have the lowest average income of $24,969.03.
+
 2.	How does physical activity level correlate with income and employment status?
 The average income increases slightly as physical activity decreases:
 	•	Active: $40,333.37 (average)
 	•	Moderate: $43,231.55
 	•	Sedentary: $43,642.36
+
 3.	What is the distribution of alcohol consumption across different age groups?
 The age group 60+ has the highest number of individuals with high alcohol consumption (35,689).
 The age group 18-25 has the lowest number of individuals with low alcohol consumption (16,552).
+
 4.	How many individuals report having a family history of depression?
 Percentage of individuals with a family history of depression: 26.89%
+
 5.	What is the percentage of people with a history of mental illness?
 30.41% of individuals have a history of mental illness.
-	6.	Which group (by employment status) reports the most sleep issues?
+
+6.	Which group (by employment status) reports the most sleep issues?
 Unemployed individuals report the most sleep issues both in proportion and absolute numbers.
-	7.	Are there differences in dietary habits by age and marital status?
+
+7.	Are there differences in dietary habits by age and marital status?
 60+ Married individuals have the highest count of unhealthy dietary habits (36,940).
 18-25 Single individuals show the highest count of moderate dietary habits (14,735).
-	8.	How does smoking status vary with chronic medical conditions?
-Smokers, especially current smokers, is associated with a higher prevalence of chronic medical conditions.
-	9.	What proportion of individuals report both a history of mental illness and substance abuse?
-Percentage of individuals with both conditions (out of those with mental illness): 31.27%
-	10. What is the average number of children per family for those with chronic medical conditions?
 
+8.	How does smoking status vary with chronic medical conditions?
+Smokers, especially current smokers, is associated with a higher prevalence of chronic medical conditions.
+
+9.	What proportion of individuals report both a history of mental illness and substance abuse?
+Percentage of individuals with both conditions (out of those with mental illness): 31.27%
+
+10. What is the average number of children per family for those with chronic medical conditions?
 The majority of families have 0 children (51,955 counts), followed by 1 child (27,389 counts).
 
 
-Conclusions
+	Conclusions
 
-	1. Social factors and mental health
-The study found a significant association between lifestyle factors (e.g., physical activity, diet, and sleep patterns) and mental health with individuals with healthier lifestyles reporting better psychological well-being and less few symptoms of depression.
-	2. Income and mental health
-And income inequality was evident in the dataset. People with higher incomes reported better access to mental health services and less stress, while those with lower incomes were more likely to have chronic stress and anxiety
-	3. Working conditions and psychological well-being
-Individuals unemployed or in unstable employment showed higher levels of mental health. Employment appears to be a protective factor against depression, perhaps because of economic stability and social ties.
-	4. Family history and depression
-Strong associations were found between family history of schizophrenia and individual mental health. This suggests that genetic predisposition, as well as environmental factors, play an important role in mental health outcomes.
-	5. Medications and chronic conditions
-Those who reported heavy drinking and smoking were also more likely to have chronic medical conditions, suggesting that substance abuse is both a risk factor and a consequence of poor mental health
+	1.	Lifestyle and Mental Health
+The study showed that habits like exercise, diet, and sleep have a strong impact on mental health.
 
-Suggestions for people
+	2.	Income and Mental Health
+People with higher incomes tend to have less stress and better access to mental health care. Those with lower incomes often experience more stress and anxiety.
 
-	1. Embrace a healthy lifestyle
-Mental health can be greatly improved by exercising regularly, maintaining a balanced diet, and ensuring adequate sleep. Small changes like walking or meditating regularly can make a difference.
-	2. Get professional help early
-If individuals exhibit symptoms of depression or anxiety, it is advisable to seek professional help as soon as possible. Early intervention can prevent escalation of mental health issues.
-	3. Social support issues
-Creating a strong social support network can prevent stress and mental illness. Maintaining relationships with friends and family is key to mental wellbeing.
-	4. Limit the use of chemicals
-Reducing alcohol consumption and quitting smoking can lead to better physical and mental health over time. Support groups and counseling can help with this process.
+	3.	Work and Well-Being
+Unemployed people or those in unstable jobs reported worse mental health. Having a job may help protect against depression by providing financial stability and social connections.
 
-Suggestions for projects
+	4.	Family and Mental Health
+A family history of mental health issues, was strongly linked to individual mental health. This shows that both genes and environment matter.
 
-	1. Promote workplace wellness programs
-Companies should invest in wellness programs that include access to fitness programs, mental health forums and counselling. These programs improve employee well-being and productivity.
-	2. Provide mental health benefits
-Improving the quality of the work environment by providing mental health insurance, free counseling, or access to treatment can significantly reduce employee absenteeism and turnover
-	3. Promote work-life balance
-Flexible working hours, telecommuting options, and ensuring employees take regular breaks can improve overall well-being and reduce burnout.
-	4. Promote an inclusive workplace
-Creating a supportive and inclusive workplace culture can encourage employees to talk about their struggles and seek help without fear of being slammed.
-	5. Monitor employee welfare
-Regular employee feedback surveys and anonymous wellbeing assessments can help companies identify issues early and take corrective action.
+	5.	Substance Use and Chronic Illness
+Heavy drinking and smoking were linked to more chronic health problems, showing that substance abuse can both cause and result from poor mental health.
+
+	Suggestions
+
+	For Individuals
+	1.	Stay Healthy
+Exercise, eat well, and get enough sleep. Small habits like walking daily or meditating can boost mental health.
+
+	2.	Seek Help Early
+If you’re feeling down or anxious, talk to a professional quickly. Early help can stop things from getting worse.
+
+	3.	Build Support
+Spend time with friends and family. Strong relationships help reduce stress and improve mental health.
+
+	4.	Cut Back on Alcohol and Smoking
+Drinking less and quitting smoking can improve both your mental and physical health. Support groups can help.
+
+	For Projects
+	1.	Support Employee Wellness
+Offer fitness programs, mental health counseling, and wellness resources at work to help employees feel better and work smarter.
+
+	2.	Provide Mental Health Support
+Offer health insurance that covers mental health, free therapy, or treatment options to reduce stress and boost productivity.
+
+	3.	Encourage Balance
+Let employees work flexible hours or from home, and encourage regular breaks to prevent burnout.
+
+	4.	Create a Safe Workplace
+Make workplaces inclusive and supportive so employees feel safe sharing their struggles and seeking help.
+
+	5.	Check on Employees
+Use surveys or anonymous feedback to spot problems early and fix them before they grow.
