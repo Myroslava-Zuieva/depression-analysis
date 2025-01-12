@@ -1,0 +1,16 @@
+Age Group,Alcohol Consumption,count
+18-25,Low,16552
+18-25,High,10566
+18-25,Moderate,18642
+26-35,High,15498
+26-35,Low,22789
+26-35,Moderate,27403
+36-45,High,15832
+36-45,Moderate,27510
+36-45,Low,22460
+46-60,Low,33155
+46-60,High,23493
+46-60,Moderate,42259
+60+,Low,44294
+60+,Moderate,57626
+60+,High,35689
