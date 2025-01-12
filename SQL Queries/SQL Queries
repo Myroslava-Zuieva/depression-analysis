@@ -1,1 +1,140 @@
+SQL Queries
 
+1. Average Income by Marital Status and Education Level
+SELECT *
+FROM (
+  SELECT 
+    `Marital Status`, 
+    `Education Level`, 
+    ROUND(AVG(Income), 2) AS avg_income
+  FROM 
+    `final-project-mz.depression_data.cleaned`
+  GROUP BY 
+    `Marital Status`, `Education Level`
+)
+PIVOT (
+  AVG(avg_income) FOR `Education Level` IN ('High School', 'Associate Degree', 'Bachelor\'s Degree')
+)
+ORDER BY 
+  `Marital Status`;
+
+2. Correlation between Physical Activity Level, Income, and Employment Status
+SELECT 
+  `Physical Activity Level`, 
+  `Employment Status`, 
+  ROUND(AVG(Income), 2) AS avg_income
+FROM 
+  `final-project-mz.depression_data.cleaned`
+GROUP BY 
+  `Physical Activity Level`, `Employment Status`
+ORDER BY 
+  `Physical Activity Level`, `Employment Status`;
+
+3.  Alcohol Consumption Distribution by Age Group
+SELECT 
+  `Age Group`, 
+  `Alcohol Consumption`, 
+  COUNT(*) AS count
+FROM 
+  `final-project-mz.depression_data.cleaned`
+GROUP BY 
+  `Age Group`, `Alcohol Consumption`
+ORDER BY 
+  `Age Group`;
+
+4. Number of Individuals with a Family History of Depression
+SELECT 
+  COUNT(*) AS family_history_count,
+  (SELECT COUNT(*) FROM `final-project-mz.depression_data.cleaned`) AS total_count,
+  ROUND(COUNT(*) * 100.0 / (SELECT COUNT(*) FROM `final-project-mz.depression_data.cleaned`), 2) AS percentage
+FROM 
+  `final-project-mz.depression_data.cleaned`
+WHERE 
+  `Family History of Depression` = True;
+
+5. Percentage of Individuals with a History of Mental Illness
+SELECT 
+  COUNT(*) AS mental_illness_count,
+  (SELECT COUNT(*) FROM `final-project-mz.depression_data.cleaned`) AS total_count,
+  ROUND(COUNT(*) * 100.0 / (SELECT COUNT(*) FROM `final-project-mz.depression_data.cleaned`), 2) AS percentage_mental_illness
+FROM 
+  `final-project-mz.depression_data.cleaned`
+WHERE 
+  `History of Mental Illness` = True;
+
+6. Employment Status and Sleep Issues
+SELECT *
+FROM (
+  SELECT 
+    `Employment Status`, 
+    `Sleep Patterns`, 
+    COUNT(*) AS count
+  FROM 
+    `final-project-mz.depression_data.cleaned`
+  GROUP BY 
+    `Employment Status`, `Sleep Patterns`
+)
+PIVOT (
+  SUM(count) FOR `Sleep Patterns` IN ('Good', 'Poor')
+)
+ORDER BY 
+  `Employment Status` DESC;
+
+7. Dietary Habits by Age and Marital Status
+SELECT
+  `Age Group`,
+  `Dietary Habits`,
+  `Marital Status`,
+  COUNT(*) AS count
+FROM 
+  `final-project-mz.depression_data.cleaned`
+GROUP BY 
+  `Age Group`, `Dietary Habits`, `Marital Status`
+ORDER BY 
+  `Age Group`, `Dietary Habits`, `Marital Status`;
+
+8. Smoking Status and Chronic Medical Conditions
+SELECT
+  `Smoking Status`,
+  `true` AS `With Chronic Medical Conditions`,
+  `false` AS `Without Chronic Medical Conditions`
+FROM (
+  SELECT 
+    `Smoking Status`, 
+    `Chronic Medical Conditions`, 
+    COUNT(*) AS count
+  FROM 
+    `final-project-mz.depression_data.cleaned`
+  GROUP BY 
+    `Smoking Status`, `Chronic Medical Conditions`
+)
+PIVOT (
+  SUM(count) FOR `Chronic Medical Conditions` IN (true, false)
+)
+ORDER BY 
+  `Smoking Status`;
+
+9. Proportion of Individuals with Mental Illness and Substance Abuse
+SELECT
+  COUNT(*) AS `Individuals with both conditions`,
+  ROUND((COUNT(*) * 100.0 / 
+    (SELECT COUNT(*) FROM `final-project-mz.depression_data.cleaned` WHERE `History of Mental Illness` = TRUE)
+  ), 2) AS `Percentage of individuals with both conditions`
+FROM 
+  `final-project-mz.depression_data.cleaned`
+WHERE 
+  `History of Mental Illness` = TRUE
+  AND `History of Substance Abuse` = TRUE;
+
+10. Average Number of Children for Families with Chronic Medical Conditions
+SELECT
+  `Number of Children`,
+  COUNT(*) AS `count`
+FROM 
+  `final-project-mz.depression_data.cleaned`
+WHERE 
+  `Chronic Medical Conditions` = TRUE
+GROUP BY 
+  `Number of Children`
+ORDER BY 
+  `Number of Children`;
