@@ -1,5 +1,5 @@
 # depression-analysis
-The goal of this project is to analyse dataset about people with depression, uncover trends, and provide actionable insights for individuals and businesses. Using SQL, Python, and Tableau, I processed the data to generate a series of visualisations.
+The goal of this project is to analyse dataset about people with depression, uncover trends, provide actionable insights for individuals and businesses. Using SQL, Python, and Tableau, I processed the data to generate a series of visualisations.
 
 Table of Contents
 
@@ -18,19 +18,19 @@ Dataset Description
 	•	Size: 413769 rows, 16 columns
 	•	Key Fields:
 	•	Age: The age of the individual in years.
-  • Marital Status: The marital status of the individual.
-  • Education Level: The highest level of education attained by the individual.
+        •       Marital Status: The marital status of the individual.
+        •       Education Level: The highest level of education attained by the individual.
 	•	Income: The annual income of the individual in USD.
 	•	Alcohol Consumption: The level of alcohol consumption.
 	•	Sleep Patterns: The quality of sleep.
 
 Tools and Technologies
 
-	•	SQL: Used for querying the dataset in BigQuery
-	•	Python: For additional data cleaning, transformation and visualizations.
-	•	Tableau: For creating visualizations and dashboards
-	•	JupyterLab: To write and execute Python scripts
-	•	GitHub: Repository for project code and documentation
+	•	SQL: Used for querying the dataset in BigQuery.
+	•	Python: For additional data transformation and visualizations.
+	•	Tableau: For creating visualizations and dashboards.
+	•	JupyterLab: To write and execute Python scripts.
+	•	GitHub: Repository for project code and documentation.
 
 Data Analysis Workflow
 
@@ -40,7 +40,7 @@ In this step, I used Python to perform initial data exploration, check data for 
 
 Step 2: Data Exploration with SQL
 
-I used BigQuery to perform data exploration and answer key analytical questions to prepare data for visualisation. 
+I used BigQuery to perform data exploration and answer key analytical questions to prepare data for visualization. 
 
 Step 3: Visualization with Tableau and Python
 
@@ -50,7 +50,7 @@ I created an interactive dashboard in Tableau, which includes:
 	3.	Alcohol Consumption Distribution by Age Group.
 	4.	Dietary Habits by Age and Marital Status.
 
-You can view the dashboard here: 
+You can view the dashboards here: 
 
 [Information about People with Depression](https://public.tableau.com/app/profile/myroslava.zuieva/viz/Book2_17366202826950/Informationaboutpeoplewithdepression?publish=yes)
 
