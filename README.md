@@ -1,3 +1,4 @@
+![pexels-tima-miroshnichenko-5711372](https://github.com/user-attachments/assets/aabba163-e823-428e-8e7a-1520adc9e137)
 # Depression analysis
 The goal of this project is to analyse dataset about people with depression, uncover trends, provide actionable insights for individuals and businesses. Using SQL, Python, and Tableau, I processed the data to generate a series of visualisations.
 
